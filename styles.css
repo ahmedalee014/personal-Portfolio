@@ -1,0 +1,246 @@
+/* General Styles */
+body {
+    background-color: rgb(70, 80, 75); /* Light blue background color */
+    padding-top: 70px; /* Padding to compensate for fixed header */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Sticky Header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Header Navigation Links */
+.nav-link {
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #f59e0b; /* Yellow color underline */
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #f59e0b; /* Yellow color on hover */
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Underline animation on hover */
+}
+#intro{
+    font-size: large;
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(75, 80, 75, 0.726);
+    color: #e5e7eb;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#intro h2{
+    font-size: 4.5dvi;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+
+#name:hover{
+    color: #f59e0b;
+}
+
+#intro h1{
+    font-size: 4.5dvi;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+}
+
+/* General Section Styling */
+#Social {
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(75, 80, 75, 0.726);
+    box-shadow: 0 1px 10px rgba(255, 250, 254, 0.726);
+    margin: 50px;
+    border-radius: 15px;
+}
+
+/* Social Icons Styling */
+#icons .flex {
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+#icons a {
+    transition: transform 0.3s, color 0.3s ease-in-out;
+    font-size: 2rem;
+    color: #222831;
+}
+
+#icons a:hover {
+    transform: translateY(-5px);
+}
+
+/* Profile Image Styling */
+#Social img {
+    margin-bottom: 20px;
+}
+
+/* About Section */
+#about {
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+    color: #e5e7eb;
+    background-color: rgba(75, 80, 75, 0.726);
+    box-shadow: 0 1px 10px rgba(255, 250, 254, 0.726);
+    margin: 50px;
+    border-radius: 15px;
+}
+
+#about img {
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+#about img:hover {
+    transform: scale(1.1);
+}
+
+#about h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    
+    transition: color 0.3s ease-in-out;
+}
+
+#about h2:hover {
+    color: #f59e0b;
+}
+
+#about p {
+    font-size: 1.125rem;
+    color: #e5e7eb;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Social Links Styling */
+#about .social-links a {
+    color: #4a5568; /* Gray color for icons */
+    margin-right: 15px;
+    transition: transform 0.3s, color 0.3s ease-in-out;
+}
+
+#about .social-links a:hover {
+    color: #f59e0b; /* Yellow color on hover */
+    transform: translateY(-5px); /* Lift the icon when hovered */
+}
+
+#about .social-links a i {
+    font-size: 2rem; /* Set the size of the icons */
+}
+
+/* Button Hover Effect */
+button {
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #2b6cb0; /* Darker blue */
+    transform: translateY(-3px);
+}
+
+/* Scroll to Top Button */
+#scrollTopBtn {
+    transition: opacity 0.3s ease-in-out, transform 0.3s;
+}
+
+#scrollTopBtn:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+/* Skills Section Styling */
+
+#skills{
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+    color: #e5e7eb;
+    background-color: rgba(75, 80, 75, 0.726);
+    box-shadow: 0 1px 10px rgba(44, 54, 88, 0.726);
+    margin: 50px;
+    border-radius: 15px;
+}
+
+#skills .text-center {
+    padding: 20px;
+    box-shadow: 0px 8px 15px rgba(65, 68, 65, 0.726);;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+#skills .text-center:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(105, 130, 139, 0.918);
+}
+/* Projects Section Styling */
+#projects{
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+    color: #e5e7eb;
+    background-color: rgba(75, 80, 75, 0.726);
+    box-shadow: 0 1px 10px rgba(255, 250, 254, 0.726);
+    margin: 50px;
+    border-radius: 15px;
+}
+
+#projects .bg-white {
+    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+#projects .bg-white:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Input Focus Styles */
+#contact{
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+    color: #e5e7eb;
+    background-color: rgba(75, 80, 75, 0.726);
+    box-shadow: 0 1px 10px rgba(255, 250, 254, 0.726);
+    margin: 50px;
+    border-radius: 15px;
+}
+
+input, textarea {
+    transition: all 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #4299e1; /* Blue-500 */
+    box-shadow: 0 0 10px rgba(66, 153, 225, 0.5);
+}
+
