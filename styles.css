@@ -108,13 +108,25 @@ body {
     align-items: center;
     color: #e5e7eb;
     background-color: rgba(75, 80, 75, 0.726);
-    box-shadow: 0 1px 10px rgba(255, 250, 254, 0.726);
+    box-shadow: 0 1px 10px rgba(44, 54, 88, 0.726);  
     margin: 50px;
     border-radius: 15px;
 }
 
+#about .text-center {
+    padding: 20px;
+    box-shadow: 0px 8px 15px rgba(65, 68, 65, 0.726);;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+#about .text-center:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(105, 130, 139, 0.918);
+}
+
 #about img {
-    border-radius: 50%;
+    border-radius: 70%;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -141,25 +153,11 @@ body {
     line-height: 1.6;
 }
 
-/* Social Links Styling */
-#about .social-links a {
-    color: #4a5568; /* Gray color for icons */
-    margin-right: 15px;
-    transition: transform 0.3s, color 0.3s ease-in-out;
-}
 
-#about .social-links a:hover {
-    color: #f59e0b; /* Yellow color on hover */
-    transform: translateY(-5px); /* Lift the icon when hovered */
-}
-
-#about .social-links a i {
-    font-size: 2rem; /* Set the size of the icons */
-}
 
 /* Button Hover Effect */
 button {
-    transition: background-color 0.3s, transform 0.3s ease-in-out;
+    transition: background-color 0.3s, transform 0.3s ease-in;
 }
 
 button:hover {
@@ -200,7 +198,10 @@ button:hover {
 #skills .text-center:hover {
     transform: scale(1.05);
     box-shadow: 0px 8px 15px rgba(105, 130, 139, 0.918);
+    color: #f59e0b;
 }
+
+
 /* Projects Section Styling */
 #projects{
     padding: 12px;
@@ -208,9 +209,16 @@ button:hover {
     align-items: center;
     color: #e5e7eb;
     background-color: rgba(75, 80, 75, 0.726);
-    box-shadow: 0 1px 10px rgba(255, 250, 254, 0.726);
+    box-shadow: 0 1px 10px rgba(44, 54, 88, 0.726);
     margin: 50px;
     border-radius: 15px;
+}
+
+#projects .text-center {
+    padding: 20px;
+    box-shadow: 0px 8px 15px rgba(65, 68, 65, 0.726);;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s ease;
 }
 
 #projects .bg-white {
@@ -219,8 +227,16 @@ button:hover {
 
 #projects .bg-white:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 15px rgba(141, 206, 230, 0.918);
 }
+
+#projects .text-center:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(105, 130, 139, 0.918);
+    color: #f59e0b;
+}
+
+
 
 /* Form Input Focus Styles */
 #contact{
