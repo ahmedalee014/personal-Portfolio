@@ -102,3 +102,14 @@ function type() {
 document.addEventListener("DOMContentLoaded", function() {
     type();
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menuToggle");
+    const nav = document.querySelector("#header nav");
+
+    menuToggle.addEventListener("click", () => {
+        nav.classList.toggle("hidden");
+    });
+});
+

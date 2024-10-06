@@ -1,3 +1,23 @@
+@media (max-width: 640px) {
+    #header nav {
+        display: none; /* Hide nav by default on small screens */
+    }
+
+    #menuToggle.active + nav {
+        display: block; /* Show nav when menu toggle is active */
+    }
+
+    #intro h1 {
+        font-size: 1.5rem; /* Smaller font size for very small screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    #about .text-center {
+        flex-direction: row; /* Adjust layout for larger screens */
+    }
+}
+
 /* General Styles */
 body {
     background-color: rgb(70, 80, 75); /* Light blue background color */
@@ -215,14 +235,19 @@ button:hover {
 }
 
 #projects .text-center {
-    padding: 20px;
+    padding: 20px;;
     box-shadow: 0px 8px 15px rgba(65, 68, 65, 0.726);;
     border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s ease;
 }
 
+#projects p{
+    color: #bbb8b2;
+}
+
 #projects .bg-white {
     transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+    background-color: rgba(75, 80, 75, 0.726);
 }
 
 #projects .bg-white:hover {
@@ -231,6 +256,7 @@ button:hover {
 }
 
 #projects .text-center:hover {
+
     transform: scale(1.05);
     box-shadow: 0px 8px 15px rgba(105, 130, 139, 0.918);
     color: #f59e0b;
